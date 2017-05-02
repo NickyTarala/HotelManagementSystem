@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:id="@+id/extra_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="3dp"
+        android:background="@android:color/white"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_gym"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|center_vertical" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:padding="2dp">
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GYM"
+                android:textSize="20sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/holo_red_dark"
+                android:text="$100"
+                android:textSize="15sp"
+                android:padding="2dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/extra_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="3dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_spa"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|center_vertical" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:padding="2dp">
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SPA"
+                android:textSize="20sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/holo_red_dark"
+                android:text="$150"
+                android:textSize="15sp"
+                android:padding="2dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/extra_three"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="8dp"
+        android:padding="3dp"
+        android:background="@android:color/white"
+
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:src="@drawable/ic_pool"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal|center_vertical" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="5dp"
+            android:padding="2dp">
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SWIMMING POOL"
+                android:textSize="20sp"
+                android:layout_marginTop="2dp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:background="@android:color/holo_red_dark"
+                android:text="$150"
+                android:textSize="15sp"
+                android:padding="2dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:textColor="@android:color/white"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

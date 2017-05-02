@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:padding="5dp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_margin="5dp">
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="MasterCard"
+        android:layout_weight="50"/>
+    <RadioButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Visa"
+        android:layout_weight="50"/>
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/card_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name on Card"
+        android:textSize="16sp"
+        android:layout_marginTop="5dp"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        android:textCursorDrawable="@drawable/edittext_pink"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"/>
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/card_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Card Number"
+        android:textSize="16sp"
+        android:maxLength="16"
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        android:textCursorDrawable="@drawable/edittext_pink"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_weight="70">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/exp_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="MM"
+        android:textSize="16sp"
+        android:maxLength="2"
+        android:layout_marginRight="20dp"
+
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        android:textCursorDrawable="@drawable/edittext_pink"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/exp_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="YYYY"
+        android:textSize="14sp"
+        android:maxLength="4"
+        android:layout_marginLeft="15dp"
+
+        app:met_baseColor="@color/colorPrimary"
+        app:met_floatingLabel="highlight"
+        android:textCursorDrawable="@drawable/edittext_pink"
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"/>
+
+</LinearLayout>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/cvv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="CVV"
+            android:textSize="14sp"
+            android:maxLength="3"
+            android:layout_weight="30"
+
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            android:textCursorDrawable="@drawable/edittext_pink"
+            app:met_primaryColor="?colorAccent"
+            app:met_singleLineEllipsis="true"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Make Payment"
+        android:textColor="@android:color/white"
+        android:background="@color/colorAccent"/>
+</LinearLayout>
+
+
+</LinearLayout>
